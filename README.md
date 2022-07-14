@@ -6,14 +6,6 @@
 <summary>1st Day - off</summary>
 <div markdown="1">
 
-div 에 markdown attribute 를 1 로 
-하는 이유는 div 안에서
-markdown 을 사용하기 위해서 입니다.
-
-
-</div>
-</detils>
-
 - 신입개발자의 역량
 
 1. 코테통과 (알고리즘)
@@ -81,3 +73,6 @@ markdown 을 사용하기 위해서 입니다.
 - clone == 해당 url을 다운로드 받는 것.
 - pull == remote에서 local로 업데이트 하는 것.
 	- vscode에서 수정 옵션 선택 가능
+
+</div>
+</detils>
