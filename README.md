@@ -2,7 +2,16 @@
 
 ## Be전공 Python_6
 
-### 1st Day off
+<summary>1st Day - off</summary>
+<div markdown="1">
+
+div 에 markdown attribute 를 1 로 
+하는 이유는 div 안에서
+markdown 을 사용하기 위해서 입니다.
+
+
+</div>
+</detils>
 
 - 신입개발자의 역량
 
