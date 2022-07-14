@@ -2,6 +2,7 @@
 
 ## Be전공 Python_6
 
+<details>
 <summary>1st Day - off</summary>
 <div markdown="1">
 
