@@ -127,5 +127,25 @@ pip install request
 pip install beautifulsoup4
 pip install lxml
 ```
+
+### .gitignore 활용
+
+[gitignore.io](https://www.toptal.com/developers/gitignore/)
+
+1. 왜 쓰는가?
+
+```
+보안상으로 위험성이 있는 파일프로젝트와 
+관계없는 파일용량이 너무 커서 제외해야되는 파일등등
+git add 에 포함시키기 싫은 경우가 있다.
+
+물론 이 경우 git rm 를 통해 일부 파일만 제외시키면 되지만, 
+모든 커밋에 그런 행동을 하는 것은 번거롭다.
+
+따라서 우리는.gitignore 이라는 디렉토리를 만들어 무시할 파일을 넣어 줄 수 있다.
+```
+
+1. ***반드시!!*** Repository 만들자마자 생성해야함.
+    1. 한 번 git이 관리하기 시작한 파일은 추가적인 ignore가 안된다.
 </div>
 </details>
