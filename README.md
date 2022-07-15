@@ -75,4 +75,57 @@
 	- vscode에서 수정 옵션 선택 가능
 
 </div>
-</detils>
+</details>
+
+<details>
+<summary>2st Day - off</summary>
+<div markdown="1">
+
+### git collaborator 초대
+
+[https://eunoia3jy.tistory.com/118](https://eunoia3jy.tistory.com/118)
+
+### git branch 활용
+
+[https://git-scm.com/book/ko/v2/Git-브랜치-브랜치란-무엇인가](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+
+1. 브렌치 생성 후 이동
+
+```bash
+git checkout -b (브렌치)
+
+git switch -c (브렌치)
+```
+
+[https://git-scm.com/book/ko/v2/Git-브랜치-브랜치와-Merge-의-기초](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88)
+
+1. 병합 (마스터 브렌치와 입력 브렌치의 병합)
+
+```bash
+git merge (브렌치)
+```
+
+1. 변화 확인하기
+
+```bash
+git log --oneline --graph
+```
+
+## 챗봇 프로그래밍
+
+### 4차 산업 혁명과 소프트웨어
+
+- 4차산업 - 소프트웨어 중심의 기술, 산업, 사회 패턴과 절차의 급격한 변화
+- 빅데이터, 인공지능, 로봇공학, 사물인터넷, 무인운송, 3D프린터, 나노기술
+- 오픈소스 라이브러리를 잘 활용하자! 디자인과 기능을 구상하여 조립하는 것이 중요.
+    - 에러를 무서워말자!
+
+### Request module 설치
+
+```bash
+pip install request
+pip install beautifulsoup4
+pip install lxml
+```
+</div>
+</details>
