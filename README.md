@@ -78,7 +78,7 @@
 </details>
 
 <details>
-<summary>2st Day - off</summary>
+<summary>2nd Day - off</summary>
 <div markdown="1">
 
 ### git collaborator 초대
@@ -147,5 +147,56 @@ git add 에 포함시키기 싫은 경우가 있다.
 
 2. ***반드시!!*** Repository 만들자마자 생성해야함.
     1. 한 번 git이 관리하기 시작한 파일은 추가적인 ignore가 안된다.
+</div>
+</details>
+
+
+<details>
+<summary>3rd Day - weekend</summary>
+<div markdown="1">
+
+arr = [ ] → arr 배열 선언
+
+len(arr) → arr 배열의 원소 갯수
+
+리스트.remove(a) → 배열에서 a 제거
+
+“이름 : {1}, 나이 {0}세”. format(20, “홍길동) → ‘이름 : 홍길동, 나이 20세’
+
+{숫자 : 문자열 표시 유형}
+
+![제목 없음1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/028da267-8c29-44c2-a9a2-6cb62e46a8a4/제목_없음1.png)
+
+chr(num) → 아스키코드 num에 해당하는 문자
+
+ord(char) → 문자 char에 해당하는 아스키코드
+
+`for i in range (1, 201, 1) :` → 1 이상 201 미만의 i에 대한 반복문. i는 1씩 증가한다.
+
+```python
+dogs = {1: "골든리트리버". 2: "진돗개", 3: "보더콜리"} //사전형 객체
+
+for key in dogs: //사전 객체 dogs를 사용하므로 항목의 키 정보 1, 2, 3이 차례로 대입
+	print("{0} : {1}".format(key, dogs[key]))
+```
+
+[https://blockdmask.tistory.com/458](https://blockdmask.tistory.com/458) → 문자열
+
+줄바꿈 없이 출력하기
+
+```python
+print("AngelPlayer", end='\n') //기본 형식.
+
+for i in range(1, 51) :
+    print("{0}".format(i * 2), end=' ')
+```
+
+파이썬에서의 삼항 연산자
+
+```python
+[true_value] if [condition] else [false_value]
+```
+
+	
 </div>
 </details>
