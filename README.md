@@ -165,8 +165,6 @@ len(arr) → arr 배열의 원소 갯수
 
 {숫자 : 문자열 표시 유형}
 
-![제목 없음1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/028da267-8c29-44c2-a9a2-6cb62e46a8a4/제목_없음1.png)
-
 chr(num) → 아스키코드 num에 해당하는 문자
 
 ord(char) → 문자 char에 해당하는 아스키코드
