@@ -3,7 +3,7 @@
 ## Be전공 Python_6
 
 <details>
-<summary>1st Day - off</summary>
+<summary>(220714)1st Day - off</summary>
 <div markdown="1">
 
 - 신입개발자의 역량
@@ -78,7 +78,7 @@
 </details>
 
 <details>
-<summary>2nd Day - off</summary>
+<summary>(220715)2nd Day - off</summary>
 <div markdown="1">
 
 ### git collaborator 초대
@@ -152,8 +152,9 @@ git add 에 포함시키기 싫은 경우가 있다.
 
 
 <details>
-<summary>3rd Day - weekend</summary>
+<summary>(220716)3rd Day - weekend</summary>
 <div markdown="1">
+
 
 arr = [ ] → arr 배열 선언
 
@@ -196,5 +197,116 @@ for i in range(1, 51) :
 ```
 
 	
+</div>
+</details>
+
+
+<details>
+<summary>(220717) 4th Day - weekend</summary>
+<div markdown="1">
+
+### join 사용방법
+
+```python
+구분자.join(문자열리스트)
+
+str_list = ["동해물과","백두산이","마르고","닳도록"]
+>>> str = " ".join(str_list)
+>>> print(str)
+# 동해물과 백두산이 마르고 닳도록 출력됨
+```
+
+구분자(separator)가 앞에 오고 문자열이 뒤에 오는 구조라서 좀 헷갈릴 수 있다.
+
+### 문자열 나누기- split() 함수
+
+이 함수는 파라미터로 구분자를 주면
+
+해당 구분자를 기준으로 문자열을 잘라 리스트 형식으로 반환합니다.
+
+만약 파라미터에 아무것도 주지 않으면 공백을 기준으로 문자를 나눕니다.
+
+```python
+>>> str = "Hi my name is gyu"
+>>> splitted_str = str.split()
+>>> print(splitted_str)
+
+['Hi', 'my', 'name', 'is', 'gyu']
+```
+
+[[파이썬 / Python] map(int, input().split())에 대해](https://ccamppak.tistory.com/38)
+
+### 진수 변환
+
+```python
+10진수에서 2진수로 변환함수: bin() # 접두어 0b 붙음
+10진수에서 8진수로 변환함수: oct() # 접두어 0o 붙음
+10진수에서 16진수로 변환함수: hex() # 접두어 0x 붙음
+```
+
+### 문자열 설정
+
+[Python의 문자열에서 부분 문자열 추출](https://www.delftstack.com/ko/howto/python/extract-substring-from-a-string-in-python/)
+
+[파이썬에서 문자열의 부분 문자열을 얻는 방법](https://www.delftstack.com/ko/howto/python/how-to-get-a-substring-of-a-string-in-python/)
+
+### 공백 제거
+
+**3가지 방법**은 아래와 같습니다.
+
+1. **replace() 사용 - 모든 공백 제거**
+2. **strip(), lstrip(), rstrip() 사용 - 양쪽, 왼쪽, 오른쪽 공백 제거**
+3. **re.sub() 사용 - 정규표현식 사용으로 원하는대로 공백 제거**
+
+### map 함수
+
+```python
+list(map(함수, 리스트))# 리스트에서 원소를 하나씩 꺼내 함수를 돌려 다시 리스트로 저장
+```
+
+[[python] 파이썬 map 함수 사용법과 예제](https://blockdmask.tistory.com/531)
+
+### 딕셔너리
+
+[Python 딕셔너리](https://zetawiki.com/wiki/Python_%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC)
+
+## **reduce()**
+
+```python
+reduce(함수, 시퀀스)
+```
+
+#시퀀스(문자열, 리스트, 튜플)의 원소들을 순차적으로 함수에 적용
+
+```python
+>>>from functools import reduce   # 파이썬 3에서는 써주셔야 해요  
+>>> reduce(lambda x, y: x + y, [0, 1, 2, 3, 4])
+10
+```
+
+먼저 0과 1을 더하고, 그 결과에 2를 더하고, ….
+
+## **filter()**
+
+```python
+filter(함수, 리스트)
+```
+
+리스트에 들어있는 원소들을 함수에 적용시켜서 
+
+결과가 참인 값들로 새로운 리스트를 만들어줌. 
+
+```python
+>>> list(filter(lambda x: x < 5, range(10)))
+[0, 1, 2, 3, 4]
+```
+
+### 절대값 함수
+
+```python
+abs(x) # x의 절대값
+```
+
+
 </div>
 </details>
