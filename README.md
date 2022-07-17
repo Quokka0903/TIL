@@ -3,7 +3,7 @@
 ## Be전공 Python_6
 
 <details>
-<summary>(220714)1st Day - off</summary>
+<summary>(220714)  1st Day - off</summary>
 <div markdown="1">
 
 - 신입개발자의 역량
@@ -78,7 +78,7 @@
 </details>
 
 <details>
-<summary>(220715)2nd Day - off</summary>
+<summary>(220715)  2nd Day - off</summary>
 <div markdown="1">
 
 ### git collaborator 초대
@@ -152,7 +152,7 @@ git add 에 포함시키기 싫은 경우가 있다.
 
 
 <details>
-<summary>(220716)3rd Day - weekend</summary>
+<summary>(220716)  3rd Day - weekend</summary>
 <div markdown="1">
 
 
@@ -202,7 +202,7 @@ for i in range(1, 51) :
 
 
 <details>
-<summary>(220717) 4th Day - weekend</summary>
+<summary>(220717)  4th Day - weekend</summary>
 <div markdown="1">
 
 ### join 사용방법
