@@ -310,3 +310,68 @@ abs(x) # x의 절대값
 
 </div>
 </details>
+
+
+<details>
+<summary>(220718)  5th Day - online </summary>
+<div markdown="1">
+
+### 컨테이너
+
+- 여러 개의 데이터를 담을 수 있는 객체.
+- 순서가 있는 데이터와 순서가 없는 데이터로 나뉨.
+        
+    - 리스트 (리스트명 = [요소1, 요소2, … ]
+        - 여러 값을 ‘순서가 있는’구조로 저장하고 싶을 때 사용
+        - 생성된 이후 변경이 가능
+    - 튜플
+        - 여러 값을 ‘순서가 있는’구조로 저장하고 싶을 때 사용
+        - 생성된 이후 변경이 불가.
+        - 단일 항목 튜플은 값 뒤에 쉼표! ex) tuple_a = (1,)
+        - 복수 항목 튜플도 넣는 것을 권장
+    - 레인지
+        - 숫자의 시퀀스를 나타냄
+        - 주로 반복문과 사용됨 (for i in range(N))
+    - 슬라이싱
+        
+        [[Tip] Python Array[::] 사용법](https://blog.wonkyunglee.io/3)
+        
+        - 시퀀스를 특정 단위로 슬라이싱
+        - 인덱스와 콜론을 사용하여 특정 부분만 잘라냄
+        - 
+    - 셋
+        - 중복되는 요소 없고 순서 상관 없는 묶음
+            - 중복되면 하나만 저장
+            - 순서가 없어서 인덱스 접근 불가
+    - 딕셔너리
+        - 키-값 쌍으로 이루어진 자료형 (3.7이후 orderd)
+        - key는 변경 불가능 데이터만 가능.
+        - 키의 값(values)는 형태 상관 없음.
+        - dict()
+
+### 형변환
+
+- 파이썬에서 데이터 형태는 서로 변환 가능
+- 암시적/명시적 변환.
+
+### find 함수
+
+```python
+문자열.find(찾을 문자, 시작 index, 끝 index)
+```
+
+[[python] 파이썬 find 함수에 대해서](https://blockdmask.tistory.com/569)
+
+[[Python - Tip] 파이썬 출력 메시지 글꼴 설정 - 글자색/배경색/굴게/기울임/밑줄](https://dsegfault.tistory.com/15)
+
+</div>
+</details>
+
+
+<details>
+<summary>(220719)  6th Day - offline </summary>
+<div markdown="1">
+
+
+</div>
+</details>
