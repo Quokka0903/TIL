@@ -372,6 +372,45 @@ abs(x) # x의 절대값
 <summary>(220719)  6th Day - offline </summary>
 <div markdown="1">
 
+### Dictionary 관련 함수
+
+[[파이썬(Python)] 딕셔너리(Dictionary) 관련 함수 정리! [.keys() / .values() / .items() / .get() / .clear(), in]](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sw4r&logNo=221504133335)
+
+### append 살펴보기
+
+[파이썬 append( ), extend( ), insert( ) 함수 차이 / 요소추가함수 비교 (Python)](https://ooyoung.tistory.com/117)
+
+### Set 살펴보기
+
+[점프 투 파이썬](https://wikidocs.net/16044)
+
+### replace 함수
+
+```python
+변수.replace(변경하고 싶은 문자, 변경할 문자, [변경할 횟수])
+```
+
+[파이썬 replace( ) 문자열을 변경하는 함수 (Python)](https://ooyoung.tistory.com/77)
+
+### re.sub
+
+```python
+re.sub(패턴, 바꿀 문자열, 문자열, 바꿀 횟수)
+```
+
+[[python] re.sub 정규표현식을 통한 문자열 치환 (특수문자 제거)](https://clolee.tistory.com/17)
+
+### Try (예외처리)
+
+[[Python] 예외처리 (try, except, finally, else)](https://yganalyst.github.io/pythonic/memo_16_except/)
+
+</div>
+</details>
+
+<details>
+<summary>(220719)  7th Day - online </summary>
+<div markdown="1">
+
 
 </div>
 </details>
