@@ -408,7 +408,309 @@ re.sub(패턴, 바꿀 문자열, 문자열, 바꿀 횟수)
 </details>
 
 <details>
-<summary>(220719)  7th Day - online </summary>
+<summary>(220720)  7th Day - online </summary>
+<div markdown="1">
+
+[Python Tutor code visualizer: Visualize code in Python, JavaScript, C, C++, and Java](https://pythontutor.com/visualize.html#mode=edit)
+
+[(Python) 20 - 파이썬의 유용한 내장함수들](https://dogrushdev.tistory.com/134)
+
+### 제어문(Control Statement)
+
+- flowchart로 표현 가능한, 특정 상황에 따른 선택적 코드 실행
+1. 조건문
+    - if / elif / else 계속 연습하자
+
+1. 반복문
+    - for문
+        - Dictionary 순회
+            - .Keys() / .values() / .items() → 튜플 활용해서 순회 가능
+            - ex)
+            
+            ```python
+            for student, grade in grades.items()
+            ```
+            
+        - enumerate 순회
+            - 인덱스(순서)와 객체를 쌍으로 담은 열거형 반환
+            
+            ```python
+            members = ['민수', '영희', '철수']
+            
+            for idx, number in enumerate(members) : 
+                print(idx, number)
+            
+            # enumerate(members, start = n) -> n값부터 idx가 증가
+            ```
+            
+        - List comprehension
+            - 표현식과 제어문을 통해 특정값을 가진 리스트 생성
+            
+            ```python
+            # code for 변수 in iterble if 조건식
+            
+            cubic_list = [number ** 3 for number in range(1, 4)]
+            print (cubic_list)
+            
+            #[1, 8, 27)
+            ```
+            
+        
+        - Dictionary Comprehension
+            
+            ```python
+            cubic_dict0 = {}
+            for number in range(1, 4) : 
+                cubic_dict0[number] = numer ** 3
+            print(cubic_dict0)
+            
+            #{1: 1, 2: 8, 3: 27}
+            
+            cubic_dict1 = {number : number ** 3 for number in range(1, 4)}
+            print (cubic_dict1)
+            
+            #{1: 1, 2: 8, 3: 27}
+            ```
+            
+
+### 함수
+
+- return은 한 함수에 두 개 불가. 여러 개를 반환하고 싶으면 리스트나 튜플 등의 컨테이너 활용
+
+```python
+def minus_and_product(x, y) :
+    return x - y,  x * y
+
+y = minus_and_product(4, 5)
+print(y) # (-1, 20)
+print(type(y)) # <class 'tuple'
+```
+
+- Input
+    - Keyword Argument 다음에 Positional Argument 넣을 수 없다
+    - Default Argument를 지정해서 정의된 것보다 더 적은 개수의 argument를 입력 가능
+    - 정해지지 않은 여러개의 Arguments 처리는 Asterisk 혹은 언패킹 연산자라고 불리는 * 덕분.
+    
+    ```python
+    print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+    ```
+    
+    - 가변인자 (*args)
+        - 여러개의 Positional Argument를 하나의 필수 parameter로 받아서 사용
+        - 몇 개를 받을 지 모를 때 사용.
+        
+        ```python
+        def add(*args) : 
+            for arg in args :
+                print(arg)
+        ```
+        
+    
+    - 패킹 / 언패킹
+        - 묶는게 패킹 푸는게 언패킹
+        
+        ```python
+        numbers = (1, 2, 3, 4, 5) #패킹
+        a, b, c, d, e = numbers #언패킹
+        ```
+        
+        - 패킹 = 여러 개의 데이터를 묶어서 할당
+        - 언패킹 = 시퀀스 속 요소를 여러 변수에 나누어 할당
+            - 언패킹시 변수 개수와 할당 갯수가 동일해야 함.
+            - 변수에 Asterisk를 붙이면 남은 요소를 담을 수 있음
+            
+            ```python
+            numbers = (1, 2, 3, 4, 5)
+            a, b, *rest = numbers
+            print(a, b, rest) # 1 2 [3, 4, 5]
+            
+            a, *rest, e = numbers
+            print(rest) # [2, 3, 4]
+            ```
+            
+        
+        - *는 시퀀스 언패킹 연산자라고 불리며, 말 그대로 시퀀스를 풀어 헤치는 연산자
+            - 튜플이나 리스트 언패킹할 때 사용
+            - * 활용해서 가변인자 만들 수 있음
+            
+            ```python
+            def func(*args) :
+            	print(args)
+            	print(type(args))
+            ```
+            
+            ```python
+            def sum_all(*numbers):
+            	result = 0
+            	for number in numbers :
+            				result += number
+            	return result
+            
+            print(sum_all(1, 2, 3)) # 6
+            print(sum_all(1, 2, 3, 4, 5, 6)) # 21
+            ```
+            
+            ```python
+            def print_family_name(father, mother, *pets): # 아빠 엄마는 필수. 반려동물은 추가적인 인자
+            	print(f'아버지 : {father}')
+            	print(f'어머니 : {mother}')
+            	print('반려동물들')
+            	for name in pets:
+            			print(f'반려동물: {name}')
+            
+            ```
+            
+        
+        - 가변 키워드 인자 (**kwargs)
+            - 몇 개의 키워드 인자를 받을지 모르는 함수 정의에 유용
+            - **kwargs는 딕셔너리로 묶여 처리되며, parameter에 **를 붙임
+            
+            ```python
+            def family(**kwargs) : 
+            	for key, value in kwargs.items()
+            			print(key, ":", value)
+            
+            family(father='아부지', mother='어무이')
+            ```
+            
+        - *args 는 **kwargs 와 같이 쓸 수 있나? YES!
+            
+            ```python
+            def print_family_name(*parents, *pets): # 아빠 엄마는 필수. 반려동물은 추가적인 인자
+            	print(f'아버지 : {parents[0]}')
+            	print(f'어머니 : {parents[1]}')
+            	print('반려동물들')
+            	for title, name in pets.items():
+            			print(f'반려동물: {title} = {name}')
+            ```
+            
+    
+
+### Python의 범위 (Scope)
+
+- 함수는 코드 내부에 local scope 생성. / 이외 공간은 global scope
+- scope
+    - global scope  : 코드 어디에서나 참조 가능한 공간
+    - local scope :  함수가 만든 scope. 함수 내부에서만 참조 가능
+- variable
+    - global variable : global scope에 정의된 변수
+    - local variable : local scope에 정의된 변수
+
+### 변수 수명주기(lifecycle)
+
+- built-in scope
+    - 파이썬 실행된 이후부터 영원히 유지
+- global scope
+    - 모듈이 호출된 시점 이후 혹은 인터프리터가 끝날 떄까지 유지
+- local scope
+    - 함수가 호출될 때 생성되고, 함수가 종료될 때까지 유지
+    
+
+### 이름 검색 규칙(Name Resolution)
+
+- 파이썬의 식별자는 namespace에 저장되어 있음.
+- a.k.a LEGB Rule
+    - Local scope - 지역 범위(현재 작업)
+    - Enclosed scope - 지역 범위 한 단계 위
+    - Global scope - 최상단 위치
+    - Built-in scope - 정의하지 않고 사용할 수 있는 모든 것
+- 함수의 범위 주의
+    - 기본적으로 함수에서 선언된 변수는 Local scope에 생성
+    - 해당 scope에 변수가 없으면 LEGB 룰에 의해 검색.
+        - 접근은 되도 수정은 안됨
+        - 할당하면 해당 scope에 생성되므로
+        - 함수 내에서 필요한 상위 scope는 argument로 넘겨서 활용해야 함
+- 상위 scope 변수를 수정하려면 global, nonlocal 키워드를 활용
+    - 그러나 코드 복잡해지고 오류발생 가능.
+    
+
+### 함수 응용
+
+- map(함수, 순회가능한 데이터구조)
+- zip(*iterables) - iterable들을 모아서 튜플형 object반환
+- lambda[parameter] : 표현식
+    - 리턴 없고 조건문 반복문 불가.
+    - 간결한 함수정의 가능. def 없어도 사용가능
+- 재귀함수는 stack overflow 조심하고, 1천회 넘기지 않게 조심할것
+    - 재귀적 표현이 자연스러운 알고리즘에 사용할 것.
+    - 변수 사용을 줄여줄 수 있으나 입력값이 커지면 연산 속도가 오래 걸림!
+
+### 모듈
+
+- 모듈과 패키지
+    - module = 합, 평균, 표준편차 등 자주 쓰는 기능들을 하나의 파일로 묶은 것
+        - 특정 기능을 하는 코드를 파이썬 파일(.py)단위로 작성
+        
+        ```python
+        import module
+        from module import var, function, Class
+        from module import * #다 가져오기
+        ```
+        
+    - package = 다양한 파일을 하나의 폴더로 묶은 것
+        - 특정 기능과 관련된 여러 모듈의 집합
+        - 패키지 안에는 서브패키지 포함
+        
+        ```python
+        from package import module
+        from package.module import var, function, Class
+        ```
+        
+    - library = 다양한 패키지를 하나로 묶은 것.
+        - 프레임워크와의 차이점? buzzword(논란되는 언어).
+        - 교수님피셜 라이브러리는 삽, 프레임워크는 포크레인
+    - pip = 관리자
+        - PyPI(Python Package Index)에 저장된 외부 모듈 및 패키지 가져오는 시스템
+        
+        ```bash
+        $ pip install SomePackage #최신버전
+        $ pip install SomePackage==1.0.5 #특정 버전
+        $ pip install SomePackage>=1.0.4 #최소 버전
+        ```
+        
+        - 패키지 관리 (기록 파일은 보통 requirements.txt)로 정의
+        
+        ```bash
+        $ pip freeze > requirements.txt # 리스트 박제
+        $ pip freeze -r requirements.txt # 박제된 리스트 설치
+        ```
+        
+    - 패키지 활용 공간은 가상환경
+    
+
+### 사용자 모듈과 패키지
+
+- 패키지 만들기
+    - 모든 폴더에는 **init**.py를 만들어 패키지로 인식
+        - python 3.3 이후부터는 없어도 되지만 만드는 것 추천.
+    
+
+### 가상 환경
+
+- 외부 패키지와 모듈을 사용하는 경우 모두 pip를 통해 설치해야 함.
+- 복수의 프로젝트를 할 때 버전이 다를 수 있고, 따라서 가상환경에 독립적으로 패키지 관리해야함
+- Python 3.5부터 생김
+    - 특정 디렉토리에 가상 환경을 만들고, 고유한 파이썬 패키지 집합 가질 수 있음.
+        - 특정 폴더에 환겨잉 있고
+        - 실행 환경에서 가상환경을 활성화 시킴
+        - 그에 따라서 폴더 관리
+        
+        ```bash
+        $ python -m venv venv00 # venv00이라는 가상환경 생성
+        
+        $ pip list # 컴퓨터에 설치된 리스트
+        
+        $ sourse venv/Scripts/activate #나만의 작고 귀여운 가상환경 시작
+        
+        $ pip list # 이후에는 이 가상환경에 설치된 리스트
+        ```
+
+</div>
+</details>
+
+
+<details>
+<summary>(220721)  8th Day - offline </summary>
 <div markdown="1">
 
 
