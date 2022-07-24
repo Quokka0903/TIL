@@ -820,7 +820,81 @@ CPU는 코드 영역에 저장된 명령어를 하나씩 가져가서 처리하�
 
 
 <details>
-<summary>(220721)  9th Day - offline </summary>
+<summary>(220722)  9th Day - offline </summary>
+<div markdown="1">
+
+- 프로젝트 제출기한은 20시.
+
+### 01_PJT
+
+- 목표
+    - 파일 입출력 이해
+    - 데이터 구조 분석과 이해
+    - Json 형태로 구성
+    
+- 요구 사항
+    - example 참고할 것
+    - 데이터를 직접 추출하고 구성하는 과정
+    - 필수와 선택 과제로 나뉨.
+    - 제출은 gitlab
+
+### 유의사항
+
+```python
+dict[’key’] 보다는 dict.get(’key’) 쓰기. 에러 때문에!
+print(f’texttext{var1}text{var2} 쓰기.
+```
+
+[https://velog.io/@aonee/Python-%EC%A0%95%EB%A0%AC-sort-sorted-reverse](https://velog.io/@aonee/Python-%EC%A0%95%EB%A0%AC-sort-sorted-reverse)
+
+</div>
+</details>
+
+
+<details>
+<summary>(220723)  10th Day - weekend </summary>
+<div markdown="1">
+
+### import math
+
+[[Python] 반올림, 올림, 내림](https://velog.io/@insutance/Python-%EB%B0%98%EC%98%AC%EB%A6%BC-%EC%98%AC%EB%A6%BC-%EB%82%B4%EB%A6%BC)
+
+### divmod(var1, var2)
+
+ → var1을 var2로 나눈 몫과 나머지를 튜플 객체로 반환
+
+### pow(var1, var2)
+
+ → var1을 var2 제곱하여 반환
+
+### all()
+
+→ 반복 가능한 자료형을 전달해 모두 True이면 True, 하나라도 False면 False
+
+### any()
+
+→ 반복 가능한 자료형을 전달해 모두 False이면 False, 하나라도 True면 True
+
+### enumertae()
+
+→ 시퀀스형을 입력받아 인덱스를 포함하는 튜플 객체를 항목으로 구성하는 enumerate 객체를 반환
+
+
+</div>
+</details>
+
+
+<details>
+<summary>(220724)  11th Day - weekend </summary>
+<div markdown="1">
+
+
+</div>
+</details>
+
+
+<details>
+<summary>(220725)  12th Day - online </summary>
 <div markdown="1">
 
 
