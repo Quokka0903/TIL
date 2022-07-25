@@ -925,6 +925,116 @@ print(f’texttext{var1}text{var2} 쓰기.
 <summary>(220725)  12th Day - online </summary>
 <div markdown="1">
 
+- 그놈의 재귀함수..!!!
+
+- .strip([chars])는 특정 문자를 지정하지 않을 시 공백을 제거한다.
+
+## 데이터 구조 (Data Structure)
+
+- 데이터 구조를 활용하기 위해서는 method를 활용해야 한다.
+    - method = 클래스 내부에 정의한 함수.
+
+### 문자열
+
+- 모든 문자는 str타입 (변경불가능)
+
+```python
+str.find(x) # x의 첫 위치를 반환. 없으면 -1 반환
+
+str.index(x) # x의 첫 위치를 반환. 없으면 오류 발생.
+
+str.isalpha() # 알파벳 문자인지 여부. (유니코드상 문자인지)
+
+str.isupper() # 대문자인지 여부. (반: islower())
+str.upper() # 모두 대문자로 변경 (반: lower(), swapcase() => 대소문자 서로 변경)
+
+str.istitle() # 타이틀 형식인지 여부.
+
+str.isdecimal() # 10진수.
+str.isdigit() # 숫자형태를 띤 것
+str.isnumeric() # 숫자 비슷한거 아님?
+```
+
+### 리스트
+
+- 유연성이 좋아 자주 사용
+
+```python
+list.append(x) # 마지막에 x 추가
+list.insert(i, x) # list[i]에 x 삽입
+list.remove(x) # 가장 왼쪽에 있는 x 제거. 항목 없으면 에러
+list.pop(x) # list[x]를 반환하고 제거. 기본값은 가장 오른쪽 항목.
+list.extend(m) # 순회형 m의 모든 항목들 리스트 끝에 추가
+list.reverse() # 거꾸로 정렬
+```
+
+### 셋
+
+- 중복되지 않는 조합
+
+```python
+s.copy() # 얕은 복사본 반환
+s.add(x) # 없으면 x 추가
+s.pop # 똑같음. set이 비면 에러
+s.remove(x) # x 삭제. set이 비면 에러
+s.discard(x) # x가 있으면 삭제
+s.update(t) # 셋t에 있는 항목 중 s에 없는 것 추가
+s.clear # 모두 제거
+s.isdisjoint(t) # 서로소일 때 True
+s.issubset(t) # s가 t의 하위일 때 True
+s.issuperset(t) # s가 t의 상위일 때 True 
+```
+
+### 딕셔너리
+
+- 키와 값의 쌍으로 이루어진 자료.
+
+```python
+d.copy() # 얕은 복사본 반환
+d.keys() # 딕셔너리의 모든 키를 담은 뷰 반환
+d.values() # 모든 밸류 담은 뷰 반환
+d.items() # 모든 키-값 쌍 담은 뷰 반환
+d.get(k) # 키 k 값 반환. 없으면 none 
+d.get(k, v) # 키 k 값 반환. 없으면 v 반환
+d.pop(k, v) # 키 k 갑 반환하고 딕셔너리에서 삭제. k가 없을 경우 v 반환
+```
+
+### 얕은 복사
+
+```python
+a = [1, 2, 3]
+b = a # b가 a가 가리키는 주소값과 같은 곳을 가리키게 됨
+print (a, b) # [1, 2, 3][1, 2, 3]
+b[0] = 5
+print (a, b) # [5, 2, 3][5, 2, 3] 
+
+a = [1, 2, 3]
+b = a[:] # b가 a의 값에서 함수를 통해 나온 반환값을 받게 됨 (1차원배열 한정)
+print (a, b) # [1, 2, 3][1, 2, 3]
+b[0] = 5
+print (a, b) # [1, 2, 3][5, 2, 3]
+```
+
+ 
+
+### 깊은 복사
+
+```python
+import copy
+a = [1, 2, [3, 1]]
+b = copy.deepcopy(a) # 통째로 아예 새로 복사. 얕은복사의 해결책
+print (a, b) # [1, 2, [3, 1]][1, 2, [3, 1]]
+b[2][0] = 5
+print (a, b) # [1, 2, [3, 1]][1, 2, [5, 1]]
+```
+
+</div>
+</details>
+
+<details>
+<summary>(220726)  13th Day - offline </summary>
+<div markdown="1">
+
 
 </div>
 </details>
