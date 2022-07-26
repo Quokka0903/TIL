@@ -1035,6 +1035,22 @@ print (a, b) # [1, 2, [3, 1]][1, 2, [5, 1]]
 <summary>(220726)  13th Day - offline </summary>
 <div markdown="1">
 
+- **TypeError: ‘int’ object is not iterable**
+    - list([iterable])이어야 하는데, 해당 위치에 반복할 수 있는(iterable) 개체가 없음.
+- **TypeError: ‘int’ object is not iterable**
+    - 정수(int)형 자체는 반복할 수 있는(iterable) 개체가 아님.
+- **TypeError: 'int' object is not subscriptable**
+    - 인덱스를 갖지않는 값에 인덱스를 가지게 코드를 짤 경우 발생하는 오류.
+- ****invalid literal for int() with base 10****
+    - 10진수로의 형변환 에러.
+
+</div>
+</details>
+
+<details>
+<summary>(220727)  14th Day - online </summary>
+<div markdown="1">
+
 
 </div>
 </details>
