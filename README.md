@@ -1260,6 +1260,23 @@ def__init__(self,name,age,number,email,student_id) :
 <summary>(220728)  15th Day - offline </summary>
 <div markdown="1">
 
+### 상속
+- 보통 상속은 기존 클래스를 변경하지 않고 기능을 추가하거나 기존 기능을 변경하려고 할 때 사용한다.
+- 기존 클래스가 라이브러리 형태로 제공되거나 수정이 허용되지 않는 상황이라면 상속을 사용해야 한다.
+
+### 매직 메소드 더 연습할 
+https://wikidocs.net/83755
+https://velog.io/@sawol/%EB%A7%A4%EC%A7%81-%EB%A9%94%EC%86%8C%EB%93%9CMagic-Method
+https://zzsza.github.io/development/2020/07/05/python-magic-method/
+
+</div>
+</details>
+
+
+<details>
+<summary>(220729)  16th Day - offline </summary>
+<div markdown="1">
+
 
 </div>
 </details>
