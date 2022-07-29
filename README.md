@@ -1279,6 +1279,36 @@ https://zzsza.github.io/development/2020/07/05/python-magic-method/
 <summary>(220729)  16th Day - offline </summary>
 <div markdown="1">
 
+- Json에 관하여
+    - 점차 파라미터가 많아질 수 있음. URL에 F스트링으로 넣게 되면 한계가 있다.
+    - 이러한 방식으로 시도해볼 필요가 있다!
+
+```python
+BASE_URL = URL -> 다른 py 파일에서도 인용할 수 있도록, 최대한 재활용해보자.
+
+path = '추가 경로'
+params = {'api_key' : value, 'region' : 'KR' ...} -> 추가 파라미터
+
+response = requests.get(BASE_URL + path, params=params).json
+```
+
+</div>
+</details>
+
+<details>
+<summary>(220730)  17th Day - weekend </summary>
+<div markdown="1">
+
+
+
+</div>
+</details>
+
+<details>
+<summary>(220731)  18th Day - weekend </summary>
+<div markdown="1">
+
+
 
 </div>
 </details>
