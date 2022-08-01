@@ -1,6 +1,8 @@
 # TIL
 
-## Be전공 Python_6
+<details>
+<summary> ## Be전공 Python_6 </summary>
+<div markdown="1">
 
 <details>
 <summary>(220714)  1st Day - off</summary>
@@ -1302,15 +1304,17 @@ response = requests.get(BASE_URL + path, params=params).json
 <summary>(220730)  17th Day - weekend </summary>
 <div markdown="1">
 
+1. 시간복잡도 숙지하기
+
+[파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)](https://wayhome25.github.io/python/2017/06/14/time-complexity/)
+
+1. 이항계수 알고리즘 숙지하기
+
+[[조합론] 이항계수 알고리즘 3가지](https://shoark7.github.io/programming/algorithm/3-ways-to-get-binomial-coefficients)
 
 
 </div>
 </details>
-
-<details>
-<summary>(220731)  18th Day - weekend </summary>
-<div markdown="1">
-
 
 
 </div>
