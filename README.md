@@ -1316,6 +1316,135 @@ response = requests.get(BASE_URL + path, params=params).json
 </div>
 </details>
 
+</div>
+</details>
+	
+	
+<details>
+<summary> ## Be전공 Web </summary>
+<div markdown="1">
 
+<details>
+<summary>(220801)  1st Day - on</summary>
+<div markdown="1">
+
+- HTML : 구조 → 계산이 안됨. 튜링언어 X
+- CSS :  표현
+- JS : 동작 - 쟝고랑 배움
+
+- 브라우저 : HTML이라는 문서를 실행해주는 파일. 난립했어서, 동일하게 보일 표준을 세웠다
+- 웹상 예상못한 결과는 브라우저의 디테일 문제일 수 있다!
+- 웹상에서 내 기술이 쓸 수 있는 기능인지 아닌지 열람가능
+
+[Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/)
+
+### HTML
+
+- 웹 페이지를 작성하기 위한 언어
+- 확장자는 .html
+- 스타일가이드는 확인해볼 것 (2 space)
+
+[코드공부방](https://code-study.tistory.com/24)
+
+- 기본 구조
+    - html : 문서의 최상위(root)요소
+    - head : 문서의 메타데이터 요소
+        - 문서 제목, 인코딩, 스타일, 외부 파일 로딩 등
+        - 일반적으로 브라우저에 나타나지 않는 내용
+    - body : 문서 본문 요소
+    - 실제 화면 구성과 관련된 내용
+    
+
+### head 예시 : Open Graph Protocol
+
+- 메타 데이터를 표현하는 새로운 규약
+    - HTML 문서의 메타 데이터를 통해 문서의 정보를 전달
+    - 메타정보에 해당하는 제목, 설명 등을 쓸 수 있도록 정의
+
+### 요소(element)
+
+- HTML의 요소는 태그와 내용으로 구성되어 있다.
+
+```html
+<h1> contents </h1>
+시작태그       종료태그
+```
+
+- 내용이 없는 태그들도 있으나, 대체로 태그로 정보의 성격과 의미를 정의
+- 요소는 중첩될 수 있음.
+    - 중첩을 통해 하나의 문서를 구조화
+    - 여는 태그와 닫는 태그의 쌍을 확인해야 함
+        - 오류를 반환하지 않고 레이아웃이 깨져서 출력됨
+        
+
+### 속성(attribute)
+
+```html
+<a href="https://google.com"></a>
+앵커 속성명 속성값
+```
+
+- 속성은 공백 No. 속성값 앞뒤에 쌍따옴표 사용
+- 속성을 통해 태그의 부가적인 정보를 설정할 수 있음
+- 요소는 속성을 가질 수 있으며, 경로나 크기와 같은 추가적인 정보를 제공
+- 요소의 시작 태그에 작성하며 보통 이름과 값이 하나의 쌍으로 존재
+- 태그와 상관없이 사용 가능한 속성도 있음. (HTML Global Attribute)
+
+### 시맨틱 태그
+
+- HTML 태그가 의미적 가치를 가지는 것.
+    - h1태그 : 최상위 제목이라는 의미
+- 의미론적 마크업
+    - 검색엔진 등에 의미있는 정보의 그룹을 태그로 표현
+    - 의미 갖는 태그를 활용하려는 노력
+    - 가독성을 높이고 보수도 쉽게 함
+    
+
+### 렌더링
+
+- 코드를 웹 사이트로 바꾸는 과정
+
+## CSS - Cascading Style Sheets
+
+- 선택 → 스타일
+
+- 요소 선택자 tag > 클래스 선택자 .class > 아이디 선택자 #id
+- 같은 포지션 클래스가 두 개 할당되면 마지막 할당 (제일 아랫줄)되는 값으로 설정
+
+- 상속 :
+    - 부모 요소의 속성을 자식에게 상속
+    - 되는 것 : Text관련 요소, opacity, visibility 등
+    - 안되는 것 : box model 관련, position 관련 요소
+
+- alt + b vscode 미리보기
+
+- normal flow가 무엇인지 항상 생각해야.
+
+[[HTML5 & CSS3] 이미지와 하이퍼링크](https://sungunjo.github.io/html-css/2020/05/25/image-and-hyperlink.html)
+
+[6. HTML - 하이퍼 링크 태그 (anchor)](https://kephilab.tistory.com/76)
+
+[CSS 가상 클래스 셀렉터 :nth-child와 :nth-of-type의 차이점](https://hogni.tistory.com/112)
+
+[HTML 컬러 코드](https://html-color-codes.info/Korean/)
+
+[](https://bebeya.tistory.com/entry/css-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%B9%EC%B9%98%EA%B8%B0-2%EA%B0%9C-3%EA%B0%9C-position-absolute-relative)
+
+[[HTML5] HTML 텍스트 관련 태그](https://blog.yena.io/studynote/2018/07/15/html-tags-text.html)
+
+[html div 여백 주기 - 위 오른쪽 아래 왼쪽](https://igija.tistory.com/83)
+
+</div>
+</details>
+
+
+<details>
+<summary>(220802)  2nd Day - off</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+	
 </div>
 </details>
