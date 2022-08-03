@@ -1442,8 +1442,101 @@ response = requests.get(BASE_URL + path, params=params).json
 <summary>(220802)  2nd Day - off</summary>
 <div markdown="1">
 
+[[ 기초 ] HTML5 시맨틱 태그 , 웹 개발 편집기](https://webaura.tistory.com/entry/%EA%B8%B0%EC%B4%88-HTML5-%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%ED%8E%B8%EC%A7%91%EA%B8%B0)
+
+[일반 형제 결합자 - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/ko/docs/Web/CSS/General_sibling_combinator)
+
+[인접 형제 결합자 - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/ko/docs/Web/CSS/Adjacent_sibling_combinator)
+
+[[css] position (static, relative, absolute, fixed) 의 속성](https://electronic-moongchi.tistory.com/26)
+
+[CSS / font-family / 글꼴 정하는 속성](https://www.codingfactory.net/10551)
+
+[CSS / font-weight / 글자 굵기 정하는 속성](https://www.codingfactory.net/10553)
+
 </div>
 </details>
+
+	
+
+<details>
+<summary>(220803)  3rd Day - on</summary>
+<div markdown="1">
+
+Web : 그리드
+
+### CSS Layout (Layout : 구조)
+
+- css 원칙
+    - Normal Flow
+        - 좌상 → 우하
+        - 모든 요소는 네모(박스모델)이고, 위에서부터 아래로, 왼쪽에서 오른쪽으로 쌓인다.
+        - Inline Direction : 글자
+        - Block Direction : 대체로 그림 (글자 외)
+    - 어떤 요소를 감싸는 형태로 배치하는 것은? or 좌우측 배치는?
+        - Float : 박스를 이동시켜 인라인 요소들이 주변을 wapping 하도록 함 (요소가 Normal flow 벗어나게 함
+            - none : 기본값
+            - left : 요소를 왼쪽으로 띄움
+            - right : 요소를 오른쪽으로 띄움
+            
+            ```html
+            .clearfix::after {
+            	content:””;
+            	display
+            ```
+            
+    - Flexbox (Flexible Box Layout
+        - 행과 열 형태로 아이템 배치하는 1차원 레이아웃 모델
+        - 축
+            - main axis (메인 축) → justify
+            - cross axis (교차 축)
+        - 구성 요소
+        - Flex Container (부모 요쇼)
+        - Flex Item (자식 요소)
+
+[이번에야말로 CSS Flex를 익혀보자](https://studiomeal.com/archives/197)
+
+[Flexbox Froggy](http://flexboxfroggy.com/)
+
+### bootstrap
+
+[Bootstrap](https://getbootstrap.com/)
+
+- 빠른 디자인 적용
+- —bs- 접두
+- ****CDN via jsDelivr를 통해 설치 없이 임포트 가능.****
+- CDN을 통해 기본 레이아웃을 활용할 수 있다
+
+- spacing (margin and padding)
+    
+    ```css
+    {property}{sides}-{size}
+        m        t   -   3
+    		p        s   +   4
+    ```
+    
+    - 부트스트랩에 약어로 모두 형성되어 있음.
+    - sides는 t, b, s(start), e(end), x(x축 양끝), y(y축 양끝), blank
+    - size는 0~5, auto. spacer 0.25, 0.5, 1, 1.5 3rem 순으로 증가
+        - 1rem = 16px.
+- Components
+
+### Bootstrap Grid System
+
+- 12개의 column (반드시! 기억하자)
+- 6개의 grid breakpoints (이것도!!)
+
+[CSS | 상단에 고정시키는 방법](https://dowhateveryouwant1661.tistory.com/58)
+
+상단고정은 stiky-top을 쓰자
+	
+</div>
+</details>
+
+
+<details>
+<summary>(220804)  4th Day - off</summary>
+<div markdown="1">
 
 	
 </div>
