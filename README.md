@@ -1538,6 +1538,42 @@ Web : 그리드
 <summary>(220804)  4th Day - off</summary>
 <div markdown="1">
 
+[flex-direction](https://runebook.dev/ko/docs/css/flex-direction)
+
+[웹 퍼블리셔를 위한 웹 레퍼런스 사이트](https://webzz.tistory.com/362)
+
+[Flex](https://getbootstrap.com/docs/4.0/utilities/flex/)
+
+[flex-flow - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/ko/docs/Web/CSS/flex-flow)
+
+[CSS / Grid / grid-column-gap, grid-row-gap, grid-gap](https://www.codingfactory.net/12441)
+
+[Grid system](https://getbootstrap.com/docs/4.0/layout/grid/)
+
+[미디어 쿼리 초보자 안내서 - Web 개발 학습하기 | MDN](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Media_queries)
+
+[HTML 폰트 적용하는 방법](https://fjdkslvn.tistory.com/78)
+	
+</div>
+</details>
+
+
+<details>
+<summary>(220805)  5th Day - off</summary>
+<div markdown="1">
+
+[[bootstarp4, 부트스트랩4] 네비토글버튼 색깔 변경하기, bootstrap4 nav hamburger color change](https://zodlab.tistory.com/82)
+
+[[html]article, section, div 대체 차이가 뭐야?](https://grahams.tistory.com/346)
+	
+</div>
+</details>
+
+
+<details>
+<summary>(220806~07)  weekend - on</summary>
+<div markdown="1">
+
 	
 </div>
 </details>
