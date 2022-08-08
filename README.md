@@ -1589,6 +1589,44 @@ Web : 그리드
 <summary>(220801)  1st Day - on</summary>
 <div markdown="1">
 
+- 무엇이 좋은 알고리즘인가?
+    - 정확성
+    - 작업량
+    - 메모리 사용량
+    - 단순성
+    - 최적성
+    
+
+```python
+# input 파일 쓰는 방법
+
+import sys
+
+sys.stdin = open('sample.txt','r')
+
+이후의 코드 입력
+```
+
+## 카운팅 정렬
+
+```python
+def counting_sort(A, B, k) :
+	
+	C = [0] * (k + 1)
+
+  for i in range(len(A)) :
+		C[A[i]] += 1
+
+	for i in range(1, len(C)) :
+		C[i] += C[i - 1]
+
+	for i in range(len(B)-1, -1, -1) :
+		C[A[i]] -= 1
+		B[C[A[i]]] = A[i]
+
+```
+
+[에라토스테네스의 체 파이썬 구현](https://velog.io/@junyp1/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98-%EC%B2%B4-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B5%AC%ED%98%84)
 
 </div>
 </details>
